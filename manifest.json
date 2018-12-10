@@ -1,0 +1,19 @@
+{
+	"name": "Rip Stuff",
+	"version": "1.0",
+	"description": "Rip Stuff",
+	"manifest_version": 2,
+	"permissions": ["downloads", "activeTab"],
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"commands": {
+		"rip_current_page": {
+			"description": "Rip current page"
+		}
+	},
+	"background": {
+		"scripts": ["rip.js", "background.js"],
+		"persistent": false
+	}
+}

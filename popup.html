@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				flex: 1 1 auto;
+				width: 200px;
+				background-color: #111;
+			}
+			button {
+				outline: none;
+				border: 2px solid #444;
+				background-color: #333;
+				border-radius: 5px;
+				color: #CCC;
+				font-weight: bold;
+				height: 30px;
+				transition: background-color 0.25s, border 0.25s;
+				margin-bottom: 5px;
+				user-select: none;
+			}
+			button:hover {
+				background-color: #444;
+			}
+			button:active {
+				transition: background-color 0.0625s, border 0.0625s;
+				border: 2px solid #F80;
+				background-color: #666;
+			}
+			#errorspan {
+				color: #F80;
+			}
+		</style>
+	</head>
+	<body id="main">
+		<button id="rip">RIP</button>
+		<span id="errorspan"></span>
+		<script src="rip.js"></script>
+		<script src="popup.js"></script>
+	</body>
+</html>
